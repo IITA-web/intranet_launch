@@ -6,7 +6,7 @@ const LightWorks = () => {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      navigate("/intranet");
+      window.location.href = "https://cgiar.sharepoint.com/sites/IITAInfoHub";
     }, 3000);
 
     return () => clearTimeout(timeout);
@@ -17,7 +17,7 @@ const LightWorks = () => {
       <img
         src="/fireworks.gif"
         alt="Confetti 🎉"
-        className="w-[100vw] h-[100vh]"
+        className="w-[100vw] h-[100vh] object-contain"
       />
     </div>
   );
