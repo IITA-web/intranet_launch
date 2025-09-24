@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import Confetti from "react-confetti";
+import { useWindowDimensions } from "../hooks/useWindowDimension";
 
 const LightWorks = () => {
-  const navigate = useNavigate();
-
+  const { width, height } = useWindowDimensions();
   useEffect(() => {
     const timeout = setTimeout(() => {
       window.location.href = "https://cgiar.sharepoint.com/sites/IITAInfoHub";
@@ -14,11 +14,13 @@ const LightWorks = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       <img src="/iita_logo.png" alt="" className="w-64 h-32  object-contain" />
-      <img
+      {/* <img
         src="/fireworks.gif"
         alt="Confetti 🎉"
         className="w-[100vw] h-[100vh] object-contain"
-      />
+      /> */}
+
+      <Confetti width={width} height={height} />
     </div>
   );
 };
