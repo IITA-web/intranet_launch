@@ -1,4 +1,3 @@
-import { GrLaunch } from "react-icons/gr";
 import { HiRocketLaunch } from "react-icons/hi2";
 import { useNavigate } from "react-router-dom";
 
