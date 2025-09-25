@@ -1,3 +1,5 @@
+import { GrLaunch } from "react-icons/gr";
+import { HiRocketLaunch } from "react-icons/hi2";
 import { useNavigate } from "react-router-dom";
 
 const Start = () => {
@@ -24,11 +26,12 @@ const Start = () => {
       <img src="/iita_logo.png" alt="" className="w-64 h-32 object-contain" />
       <button
         onClick={handleBuzzerClick}
-        className="lg:w-[500px] h-[150px] mt-10 bg-red-500 border-[20px] border-red-600 rounded-full px-10 py-4 hover:bg-red-800 hover:border-red-700 transition-all duration-1000"
+        className=" w-fit h-[150px] flex flex-row items-center gap-4 mt-10 bg-red-500 border-[20px] border-red-600 rounded-full px-10 py-4 hover:bg-red-800 hover:border-red-700 transition-all duration-1000"
       >
         <p className="text-white text-5xl font-bold text-center">
           Intranet Launch
         </p>
+        <HiRocketLaunch color="#fff" size={48} />
       </button>
     </div>
   );
